@@ -9,6 +9,7 @@ COPY . .
 
 # Install Python dependencies
 RUN pip install -r requirements.txt
+RUN python3 -m pip install --user -r requirements.txt
 
 # Expose port 5000 for Flask
 EXPOSE 5000
